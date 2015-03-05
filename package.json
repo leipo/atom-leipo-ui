@@ -1,10 +1,10 @@
 {
-  "name": "leipo-syntax",
+  "name": "leipo-ui",
   "theme": "ui",
   "version": "0.1",
   "description": "Leipo UI Theme",
-  "license": "MIT",
-  "repository": "https://github.com/atom/atom-dark-ui",
+  "license": "GPL",
+  "repository": "https://github.com/leipo/atom-leipo-ui",
   "engines": {
     "atom": ">0.40.0"
   }
