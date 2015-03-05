@@ -1,0 +1,50 @@
+body /deep/ .settings-view {
+
+  .config-menu {
+    padding-top:0;
+    border-right: 0;
+  }
+  select {
+    color: @text-color !important;
+    border: 0;
+    box-shadow: none;
+    background-color: #222 !important;
+
+    &:hover {
+      box-shadow: inset 0px 1px 3px rgba(0,0,0,0.25) !important;
+      background-color: #222 !important;
+    }
+  }
+  img.avatar {
+    -webkit-filter: grayscale(75%);
+  }
+  a.author {
+    color: @cool-gray !important;
+  }
+  input[type=checkbox]:focus{
+    box-shadow: none;
+  }
+
+  .btn {
+    height: 32px;
+    background-color: #383838;
+    color: @text-color;
+    border: none !important;
+    &:hover {
+      box-shadow: inset 0px 1px 3px rgba(0,0,0,0.25);
+      background-color: #222;
+    }
+  }
+
+  .alert-info {
+    background-color: #222;
+    color: @text-color;
+  }
+
+
+}
+
+body /deep/ {
+
+}
+//}

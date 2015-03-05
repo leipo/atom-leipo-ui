@@ -1,0 +1,122 @@
+@import "ui-mixins";
+@import "ui-variables";
+@import "buttons";
+
+.panel {
+  .text(normal);
+  &.bordered {
+    border-radius: @component-border-radius;
+  }
+}
+
+.tool-panel {
+  .text(normal);
+  position: relative;
+  background-color: @tool-panel-background-color;
+
+  .editor.mini {
+    background-color: @syntax-background-color;
+    height: 27px;
+  }
+
+  .btn {
+    background-color: #242424;
+    color: @text-color;
+    border: none !important;
+
+    &:hover {
+      box-shadow: inset 0px 1px 3px rgba(0,0,0,0.25);
+      background-color: #222;
+    }
+
+    &.selected {
+      color: #222;
+      box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+
+      background-color: @green !important;
+    }
+  }
+}
+
+  .status-bar .cli-status {
+    float: left;margin-top:1px;
+    .icon-plus {
+      display: none;
+    }
+    .status-running {
+      color: @blue;
+    }
+    .status-success {
+      color: @green;
+    }
+    .status-error {
+      color: @red;
+    }
+  }
+
+
+.panel.cli-status {
+  position: relative;
+
+
+  .panel-heading {
+    position: absolute;
+    right: 12px; top: 12px;
+
+    .btn {
+      padding: 8px 12px; height: auto;
+      color: @text-color;
+      background-color:#333;
+      border: none !important;
+      font-family: @font-family;
+      font-size: 12px;
+
+          &:hover {
+            box-shadow: inset 0px 1px 3px rgba(0,0,0,0.25);
+            background-color: #222;
+          }
+
+    }
+    .btn:not(.hide) + .btn:not(.hide) {
+      border-left: 1px solid #444 !important;
+    }
+  }
+
+
+  &, & .cli-panel-body pre {
+    background-color: #222 !important;
+    font-family: @font-family-code !important;
+  }
+  .editor.mini {
+    background-color: #202020;
+  }
+}
+
+.inset-panel {
+  .text(normal);
+  position: relative;
+  background-color: @inset-panel-background-color;
+}
+
+.is-blurred {
+  .tool-panel,
+  .inset-panel {
+  }
+}
+
+.panel-heading {
+  .text(normal);
+
+  background-color: transparent;
+
+  .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @bg: @button-background-color;
+    @hover: @button-background-color-hover;
+    @selected: @button-background-color-selected;
+    @text: @text-color;
+    .btn-background(@bg, @hover, @selected, @text);
+  }
+}
