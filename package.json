@@ -2,7 +2,7 @@
   "name": "leipo-syntax",
   "theme": "ui",
   "version": "0.1",
-  "description": "Default dark theme for interface components",
+  "description": "Leipo UI Theme",
   "license": "MIT",
   "repository": "https://github.com/atom/atom-dark-ui",
   "engines": {
