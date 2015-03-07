@@ -6,6 +6,6 @@
   "license": "GPL",
   "repository": "https://github.com/leipo/atom-leipo-ui",
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">0.50.0"
   }
 }
